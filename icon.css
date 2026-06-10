@@ -29,6 +29,5 @@
 
 /* 4. Icons ke Names aur unke Codes (Jo aapki style.css me the) */
 .ri-youtube::before { content: "\e900"; }
-.ri-youtube-shorts::before { content: "\e903"; }
 .ri-youtube-outline::before { content: "\e905"; }
 
