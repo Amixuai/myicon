@@ -1,1 +1,34 @@
+/* 1. Font File ko connect kiya */
+@font-face {
+    font-family: 'my_youtube_icon';
+    src: url('fonts/my_youtube_icon.woff') format('woff'); 
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+/* 2. Global Base Class (Isme height, width, margin pehle se set hai) */
+.ri {
+    display: inline-block;
+    width: 1.2em;        /* Apne aap text ke size ke hisaab se scale hoga */
+    height: 1.2em;
+    vertical-align: middle;
+    line-height: 1;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    margin: 0 5px;       /* Default margin taaki text se chipke na */
+}
+
+/* 3. Font Icons ki Base Property */
+.ri-font {
+    font-family: 'my_youtube_icon';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* 4. Icons ke Names aur unke Codes (Jo aapki style.css me the) */
+.ri-youtube::before { content: "\e900"; }
+.ri-youtube-shorts::before { content: "\e903"; }
+.ri-youtube-outline::before { content: "\e905"; }
 
